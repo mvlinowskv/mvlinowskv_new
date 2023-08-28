@@ -1,104 +1,92 @@
 .main {
-  @media (min-width: 991px) {
-    padding: 0 3rem;
-  }
+    @media (min-width: 991px) {
+        padding: 0 3rem;
+    }
 }
 
 .h-box {
-  display: flex;
-  align-items: end;
-  gap: 1rem;
-  color: #fff;
-  font-size: clamp(1.25rem, 1vw, 2.5rem);
-  margin: 1rem 0;
-
-  &__mt {
-    @media (min-width: 991px) {
-      margin-top: 6rem;
-    }
-  }
-
-  &__mb {
-    margin-bottom: 2rem;
-  }
-
-  &__h1 {
-    position: relative;
-    right: 3.5rem;
-    top: 1.5rem;
-    font-size: clamp(1.75rem, 1.25vw, 2rem);
-  }
-
-  &__description {
+    display: flex;
+    align-items: end;
+    gap: 1rem;
     color: #fff;
-    font-weight: 300;
-    font-size: 1rem;
-    letter-spacing: 0.5px;
-    margin-bottom: 1rem;
-
-
-    @media (min-width: 991px) {
-      width: 60%;
-      margin-top: 2rem;
-      padding: 0 3rem;
+    font-size: clamp(1.25rem, 1vw, 2.5rem);
+    margin: 1rem 0;
+    &__mt {
+        @media (min-width: 991px) {
+            margin-top: 6rem;
+        }
     }
-  }
-
+    &__mb {
+        margin-bottom: 2rem;
+    }
+    &__h1 {
+        position: relative;
+        right: 3.5rem;
+        top: 1.5rem;
+        font-size: clamp(1.75rem, 1.25vw, 2rem);
+    }
+    &__description {
+        color: #fff;
+        font-weight: 300;
+        font-size: 1rem;
+        letter-spacing: 0.5px;
+        margin-bottom: 1rem;
+        @media (min-width: 991px) {
+            width: 60%;
+            margin-top: 2rem;
+            padding: 0 3rem;
+        }
+    }
 }
 
-
 .main {
-  padding: 0 1.5rem;
+    padding: 0 1.5rem;
 }
 
 .hobby {
-  @media (min-width: 991px) {
-    display: flex;
-    align-items: center;
-  }
-
-  &__box {
-    img {
-      max-width: 100%;
-
-      @media (min-width: 991px) {
-        max-width: 65%;
-        height: auto;
-        margin-top: 3rem;
-        margin-bottom: 0;
-      }
+    @media (min-width: 991px) {
+        display: flex;
+        align-items: center;
     }
-  }
-
-  &__phones {
-    width: 100%;
-
-    img {
-      max-width: 100%;
+    &__box {
+        img {
+            max-width: 100%;
+            @media (min-width: 991px) {
+                max-width: 65%;
+                height: auto;
+                margin-top: 3rem;
+                margin-bottom: 0;
+            }
+        }
     }
-  }
+    &__phones {
+        width: 100%;
+        img {
+            max-width: 100%;
+        }
+    }
 }
+
 .h5 {
-  color: #B80A38;
-  font-size: clamp(1.5rem, 1vw, 2rem);
-  margin: 0;
+    color: #B80A38;
+    font-size: clamp(1.5rem, 1vw, 2rem);
+    margin: 0;
 }
 
 .pink-p {
-  margin:  0.5rem 0 0;
-  color: #F21559;
-  padding-bottom: 0.5rem;
-
-  a {
-    color: #f2175a;
-  }
+    margin: 0.5rem 0 0;
+    color: #F21559;
+    padding-bottom: 0.5rem;
+    a {
+        color: #f2175a;
+    }
 }
 
 .logo {
-  max-width: 200px;
-  margin-bottom: 1rem;
-
-  @media (min-width: 991px) {
-    display: none;
-  }
+    max-width: 200px;
+    margin-bottom: 1rem;
+    padding-left: 1.25rem;
+    @media (min-width: 991px) {
+        display: none;
+    }
 }
