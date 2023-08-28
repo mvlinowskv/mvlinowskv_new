@@ -1,0 +1,20 @@
+@import "variables";
+@import "utilities";
+@import "fonts";
+@import "nav";
+@import "hi-section";
+@import "skills";
+@import "last-projects";
+
+body, * {
+  scroll-behavior: smooth;
+  scroll-padding-top: 1rem;
+}
+body {
+  background: linear-gradient(180deg, #F21559 0%, #E6BAD8 100%);
+  font-size: 16px;
+  margin: 0;
+  box-sizing: border-box;
+  min-height: 100vh;
+  position: relative;
+}

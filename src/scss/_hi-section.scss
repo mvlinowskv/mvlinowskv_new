@@ -1,0 +1,64 @@
+.hi-section {
+
+  @media (min-width: 991px) {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+
+    &__flex {
+      width: 100%;
+    }
+  }
+
+  &__box {
+    display: flex;
+    align-items: end;
+    gap: 1rem;
+    color: #fff;
+    font-size: clamp(1.25rem, 1vw, 2.5rem);
+
+    &__h1 {
+      position: relative;
+      right: 3.5rem;
+      top: -0.5rem;
+
+      @media(min-width: 991px) {
+        right: 3.5rem;
+        top: 1.5rem;
+      }
+
+    }
+
+  }
+
+  &__description {
+    color: #fff;
+    font-weight: 300;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+
+    @media (min-width: 991px) {
+      width: 60%;
+      margin-top: 2rem;
+      padding: 0 3rem;
+    }
+  }
+
+  &__image {
+    text-align: center;
+    img {
+      max-width: 100%;
+      height: auto;
+      margin-top: 1rem;
+    }
+    @media (min-width: 991px) {
+      width: 100%;
+      margin-top: 4rem;
+
+      img {
+        max-width: 80%;
+        height: auto;
+      }
+    }
+  }
+}

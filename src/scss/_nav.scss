@@ -1,0 +1,103 @@
+.nav {
+
+  @media (max-width: 990.98px) {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 1rem;
+  }
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding: 1rem;
+
+  @media (min-width: 991px) {
+    padding: 4rem 3rem 0;
+    display: flex;
+    justify-content: end;
+    position: relative;
+  }
+
+
+
+  &__hamburger {
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+    svg {
+      width: 40px;
+      height: 40px;
+
+      path {
+        stroke: #fff;
+      }
+    }
+
+    @media (min-width: 991px) {
+      display: none;
+    }
+  }
+  &::before {
+    background-image: url("/images/raspberry.svg");
+    position: absolute;
+    background-position: center;
+    background-size: cover;
+    right: 0;
+    top: 0;
+    width: clamp(28rem,1vw,33rem);
+    height: 40.5rem;
+    z-index: -1;
+    content: "";
+  }
+
+  &__bar {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    top:0;
+    position: fixed;
+    right: -100vh;
+    width: 75%;
+    z-index: 2;
+    background: #f2175a;
+    height: 100vh;
+    transition: right 0.6s ease-out;
+    border-left: 1rem solid #fff;
+    border-bottom-left-radius: 20rem;
+
+    &--open {
+      right: 0;
+      transition: right 0.6s ease-out;
+    }
+
+    @media (min-width: 991px) {
+      flex-direction: row;
+      position: static;
+      width: inherit;
+      height: inherit;
+      background: inherit;
+      border: 0;
+      border-radius: 0;
+    }
+  }
+
+  &__btn {
+    padding: .25rem 1.75rem;
+    border-radius: 1.5rem;
+    color: #fff;
+    text-decoration: none;
+
+    @media (min-width: 991px) {
+      padding: .75rem 1.75rem;
+
+    }
+
+    &--pink {
+      background-color: transparent;
+
+      @media (min-width: 991px) {
+        background-color: $dark-pink;
+      }
+    }
+  }
+}
