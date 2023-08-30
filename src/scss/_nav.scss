@@ -44,6 +44,9 @@
         height: 40.5rem;
         z-index: -1;
         content: "";
+        @media (min-width: 1920px) {
+            background-position: inherit;
+        }
     }
     &__bar {
         display: flex;
@@ -71,6 +74,8 @@
             background: inherit;
             border: 0;
             border-radius: 0;
+            width: 100%;
+            justify-content: end;
         }
     }
     &__btn {
