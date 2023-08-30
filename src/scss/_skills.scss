@@ -1,99 +1,86 @@
 .skills {
-  display: flex;
-  align-items: center;
-  gap: clamp(1rem, 1vw, 2rem);
-  flex-direction: column-reverse;
-
-  @media (min-width: 991px) {
-    flex-direction: row;
-  }
-
-  &__info {
-    @media (min-width: 991px) {
-      padding-left: 3rem;
-    }
-  }
-
-  &__container {
-    @media (min-width: 991px) {
-      display: flex;
-    }
-  }
-
-  &__phones {
-    width: 100%;
-    position: relative;
-
-    @media (min-width: 991px) {
-      bottom: 12rem;
-
-      img {
-        max-width: 100%;
-      }
-    }
-
-    img {
-      max-width: 100%;
-    }
-
+    display: flex;
+    align-items: center;
+    gap: clamp(1rem, 1vw, 2rem);
+    flex-direction: column-reverse;
     &::before {
-      background-image: url("/images/raspberry-left.svg");
-      background-position: center;
-      background-size: cover;
-      content: "";
-      position: absolute;
-      right: 0;
-      top: 0;
-      width: 27rem;
-      height: 43rem;
-      z-index: -1;
-      @media (min-width: 991px) {
-        width: 42rem;
-        height: 60rem;
-      }
-
+        background-image: url("/images/raspberry-left.svg");
+        background-position: center;
+        background-size: cover;
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 27rem;
+        height: 43rem;
+        z-index: -1;
+        top: 27%;
+        @media (min-width: 991px) {
+            width: 39rem;
+            height: 57rem;
+            top: 15%;
+        }
     }
-  }
-  &__box {
-    width: 100%;
-    margin-bottom: 2rem;
-  }
-
-  &__p {
-    font-size: 0.85rem;
-    text-transform: uppercase;
-    font-weight: 600;
-    color: #fff;
-  }
+    @media (min-width: 991px) {
+        flex-direction: row;
+    }
+    &__info {
+        @media (min-width: 991px) {
+            padding-left: 3rem;
+        }
+    }
+    &__container {
+        @media (min-width: 991px) {
+            display: flex;
+        }
+    }
+    &__phones {
+        @media (min-width: 991px) {
+            bottom: 12rem;
+            width: 100%;
+            img {
+                max-width: 100%;
+            }
+        }
+        img {
+            max-width: 100%;
+        }
+    }
+    &__box {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    &__p {
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        font-weight: 600;
+        color: #fff;
+    }
 }
 
 .skill {
-
-  &__container {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    margin-bottom: 0.5rem;
-  }
-
-  &__box {
-    display: flex;
-    gap: 0.15rem;
-    align-items: center;
-  }
-
-  &__p {
-    display: flex;
-    gap: 0.15rem;
-    align-items: center;
-  }
-
-  &__h {
-    display: flex;
-    gap: 0.5rem;
-    align-items: center;
-    font-size: 0.85rem;
-    font-weight: 600;
-    color: #fff;
-  }
+    &__container {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+    &__box {
+        display: flex;
+        gap: 0.15rem;
+        align-items: center;
+    }
+    &__p {
+        display: flex;
+        gap: 0.15rem;
+        align-items: center;
+    }
+    &__h {
+        display: flex;
+        gap: 0.5rem;
+        align-items: center;
+        font-size: 0.85rem;
+        font-weight: 600;
+        color: #fff;
+    }
 }
