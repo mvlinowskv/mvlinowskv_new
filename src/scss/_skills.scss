@@ -3,24 +3,7 @@
     align-items: center;
     gap: clamp(1rem, 1vw, 2rem);
     flex-direction: column-reverse;
-    &::before {
-        background-image: url("/images/raspberry-left.svg");
-        background-position: center;
-        background-size: cover;
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 27rem;
-        height: 43rem;
-        z-index: -1;
-        top: 27%;
-        @media (min-width: 991px) {
-            width: 39rem;
-            height: 57rem;
-            top: 15%;
-        }
-    }
+    position: relative;
     @media (min-width: 991px) {
         flex-direction: row;
     }
@@ -35,6 +18,27 @@
         }
     }
     &__phones {
+        &::before {
+            background-image: url("/images/raspberry-left.svg");
+            background-position: center;
+            background-size: cover;
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 27rem;
+            height: 43rem;
+            z-index: -1;
+            top: 27%;
+            @media (min-width: 991px) {
+                // width: 39rem;
+                // height: 57rem;
+                // top: 15%;
+                width: 43rem;
+                height: 62rem;
+                top: 0%;
+            }
+        }
         @media (min-width: 991px) {
             bottom: 12rem;
             width: 100%;

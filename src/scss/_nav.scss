@@ -17,6 +17,8 @@
         display: flex;
         justify-content: end;
         position: relative;
+        max-width: 1920px;
+        margin: auto;
     }
     &__hamburger {
         border: 0;

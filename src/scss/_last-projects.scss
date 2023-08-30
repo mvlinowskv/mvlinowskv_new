@@ -4,12 +4,13 @@
         justify-content: center;
         flex-direction: column;
         align-items: center;
+        position: relative;
     }
     &:before {
         content: "";
         position: absolute;
         right: 0;
-        top: 50%;
+        top: -15%;
         width: 40rem;
         height: 64rem;
         background-repeat: no-repeat;
